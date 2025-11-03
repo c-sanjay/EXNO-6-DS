@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 df=pd.read_csv("titanic_dataset.csv")
 df.head()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/c111b446-500b-4b06-b284-572eb6a6d182"> 
+<img width="1132" height="205" alt="image" src="https://github.com/user-attachments/assets/6e10242a-70f4-40fa-aa01-f3329620c915" />
 
 
 ### 1.Line Plot
@@ -39,7 +39,7 @@ y=[3,6,2,7,1]
 sns.lineplot(x=x,y=y)
 plt.title('Line Plot')
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/2b7fed29-04ac-42de-b325-5ad68b3e36b2" width="300" height="300"> 
+<img width="558" height="461" alt="image" src="https://github.com/user-attachments/assets/7351ead7-e0e9-4664-98d1-0dee95ab3033" />
 
 ### 2.Multi Line Plot
 ```py
@@ -52,7 +52,7 @@ sns.lineplot(x=x,y=y2)
 sns.lineplot(x=x,y=y3)
 plt.title('Multi Line Plot')
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/6b052b9d-b734-4079-a94d-f9c0f46039d6" width="300" height="300"> 
+<img width="549" height="459" alt="image" src="https://github.com/user-attachments/assets/f74f73a4-b531-48df-8a24-e6d7925da1f8" />
 
 
 ## TO VISUALIZE RELATIONSHIPS
@@ -62,7 +62,7 @@ plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked',y='Fare',data=df,palette='rainbow')
 plt.title("Fare Of Passenger By Embarked Town")
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/bcc83b1f-3e33-4793-ac34-686308202586" width="300" height="300"> 
+<img width="731" height="494" alt="image" src="https://github.com/user-attachments/assets/5e6fe8ff-1443-4e55-a925-af438c67188d" />
 
 ### 2.Scatter Plot
 ```py
@@ -70,7 +70,7 @@ sns.scatterplot(x="Age", y="Fare", data=df)
 plt.title('Scatterplot of Age vs Fare')
 plt.show()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/f88c86d0-a615-4347-a4ab-9726858d2b85" width="300" height="300"> 
+<img width="599" height="456" alt="image" src="https://github.com/user-attachments/assets/d84b3fc7-de76-4103-967e-d95258e82693" />
 
 ### 3.Bubble Chart
 ```py
@@ -78,21 +78,21 @@ sns.scatterplot(x="Age", y="Fare", size="Pclass", data=df, sizes=(30, 200))
 plt.title('Bubble Chart of Age vs Fare, Size by Passenger Class')
 plt.show()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/a981076a-4aec-4dd5-8793-5c37af9b3d8b" width="300" height="300"> 
+<img width="625" height="462" alt="image" src="https://github.com/user-attachments/assets/0fba5afd-7e66-4e05-b946-f7f49912fffd" />
 
 ## TO CAPTURE DISTRIBUTIONS
 ### 1.Histogram
 ```py
 sns.histplot(data=df,x="Pclass",hue="Survived",kde=True)
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/8f3d6fba-04a6-414e-aeed-4136c6a3d2ee" width="300" height="300"> 
+<img width="616" height="474" alt="image" src="https://github.com/user-attachments/assets/532965e5-b4f7-41cc-8b2d-9aa727cd7bad" />
 
 ### 2.Box Plot
 ```py
 sns.boxplot(x='Pclass',y='Age',data=df,palette='rainbow')
 plt.title("Age By Passenger Class")
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/0256c67c-dcc1-4099-8220-572400671d34" width="300" height="300"> 
+<img width="616" height="474" alt="image" src="https://github.com/user-attachments/assets/f2b8a238-b6ba-418d-925c-90b7af907697" />
 
 ### 3.Violin Plot
 ```py
@@ -100,7 +100,7 @@ sns.violinplot(x="Pclass", y="Fare", data=df)
 plt.title('Violin Plot of Fare by Passenger Class')
 plt.show()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/822c14ba-e4a5-4705-8097-ec0b3b93c880" width="300" height="300"> 
+<img width="583" height="459" alt="image" src="https://github.com/user-attachments/assets/917c7081-aad7-4c7b-aecb-13a567bb4e27" />
 
 ### 4.Density Plot
 ```py
@@ -108,7 +108,7 @@ sns.kdeplot(data=df['Age'], shade=True)
 plt.title('Density Plot of Passenger Ages')
 plt.show()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/701e4bca-dc51-4963-82d6-4f3b6541d905" width="300" height="300"> 
+<img width="658" height="483" alt="image" src="https://github.com/user-attachments/assets/70226d03-0718-488a-a0fe-952fe250d9af" />
 
 ### 5.Heatmap
 ```py
@@ -118,7 +118,7 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 plt.title('Heatmap of Titanic Dataset')
 plt.show()
 ```
-<img src="https://github.com/PriyankaAnnadurai/EXNO-6-DS/assets/118351569/82f41352-a05b-482c-9328-5da56e384c85" width="300" height="300"> 
+<img width="632" height="511" alt="image" src="https://github.com/user-attachments/assets/755373af-7cc0-4ea8-b9a6-bec1dd264124" />
 
 
 ## Result:
